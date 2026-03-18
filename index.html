@@ -84,6 +84,72 @@
             </div>
         </section>
 
+        <section id="products">
+            <div class="section-header reveal">
+                <span class="section-tag"> Nuestros productos</span>
+                <h2 class="section-title">Colección destacada</h2>
+                <p>Cada producto es una obra maestra de formulación — desarrollado con los
+                    mejores ingredientes para resultados visibles desde la primera aplicación.</p>
+            </div>
+            
+            <!-- Botones de filtro — data-cat corresponde al atributo data-cat de las tarjetas -->
+            <div class="product-filters reveal">
+                <button class="filter-btn active" onclick="filterProducts('all',   this)">Todos</button>
+                <button class="filter-btn" onclick="filterProducts('face',  this)">Rostro</button>
+                <button class="filter-btn" onclick="filterProducts('lips',  this)">Labios</button>
+                
+            </div>
+
+             <!-- Grid de tarjetas de producto -->
+            <div class="products-grid" id="products-grid">
+
+                <div class="product-card reveal" data-cat="face">
+                    <div class="product-img-wrap"><img class="product-img" src="img/product-1.jpg"
+                            alt="Foundation Glow" /></div>
+                    <span class="product-badge gold">Best Seller</span>
+                    <div class="product-info">
+                        <p class="cat">Rostro</p>
+                        <h3>Foundation Glow</h3>
+                        <div class="stars">★★★★★</div>
+                        <div class="product-footer">
+                            <span class="price">$789.99</span>
+                            <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-cat="lips">
+                    <div class="product-img-wrap"><img class="product-img" src="img/product-2.jpg" alt="Velvet Rouge" />
+                    </div>
+                    <span class="product-badge">Nuevo</span>
+                    <div class="product-info">
+                        <p class="cat">Labios</p>
+                        <h3>Velvet Rouge</h3>
+                        <div class="stars">★★★★★</div>
+                        <div class="product-footer">
+                            <span class="price"><del>$429.99</del> $329.99</span>
+                            <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-cat="face">
+                    <div class="product-img-wrap"><img class="product-img" src="img/product-3.jpg" alt="Glow Palette" />
+                    </div>
+                    <div class="product-info">
+                        <p class="cat">Rostro</p>
+                        <h3>Glow Palette</h3>
+                        <div class="stars">★★★★☆</div>
+                        <div class="product-footer">
+                            <span class="price">$529.99</span>
+                            <button class="add-btn" onclick="addToCart(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
     </main>
     <script src="js/script.js"></script>
 </body>
