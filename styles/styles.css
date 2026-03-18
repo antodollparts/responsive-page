@@ -324,6 +324,39 @@
       letter-spacing: .05em;
   }
 
+  /* ABOUT */
+  #about {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 8%;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  #about h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+  }
+
+  #about p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--muted);
+  }
+
+  #about .about-image {
+      margin-top: 2.5rem;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(214, 117, 154, 0.518);
+      transition: transform .3s, box-shadow .3s;
+  }
+
 
   /*Media Queries*/
 
