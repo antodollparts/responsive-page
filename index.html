@@ -5,29 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyMakeup - Beauty Store</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header>
-       <nav class="navbar">
+        <nav class="navbar">
             <div class="nav-logo">MyMakeup</div>
 
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
 
-            <div class="hamburger">
+            <div class="burger" id="burger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                Comprar ahora
+            </button>
         </nav>
+
+        <!-- Menú móvil oculto en pantallas grandes -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#hero" onclick="closeMenu()">Inicio</a>
+            <a href="#about" onclick="closeMenu()">Nosotros</a>
+            <a href="#products" onclick="closeMenu()">Productos</a>
+            <a href="#contact" onclick="closeMenu()">Contacto</a>
+        </div>
     </header>
 
+    <main>
+        <section id="hero">
+            <div class="hero-copy">
+                <span class="hero-badge">Nueva colección primavera 2026</span>
+
+                <h1>Glow like<br><em>never</em><br>before.</h1>
+
+                <p>Descubre nuestra línea de belleza de lujo inspirada en lo natural —
+                    ingredientes limpios, fórmulas avanzadas y resultados que hablan por sí solos.</p>
+
+                <div class="hero-actions">
+                    <a href="#products" class="btn-primary">Explorar colección</a>
+                    <a href="#about" class="btn-outline">Nuestra historia</a>
+                </div>
+            </div>
+
+            <!-- Estadísticas de la marca -->
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-num">98%</span>
+                    <span class="stat-label">Satisfacción</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-num">50+</span>
+                    <span class="stat-label">Productos</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-num">12k+</span>
+                    <span class="stat-label">Clientas felices</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
