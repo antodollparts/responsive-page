@@ -1,4 +1,4 @@
-# Responsive-page
+# MyMakeup - Landing Page Responsive
 
 Bienvenida/o a mi proyecto final del módulo Fundamentos de desarrollo web.  
 En este proyecto desarrollé y desplegué una Landing Page responsiva de una tienda de productos de maquillaje con fines de demostración.
