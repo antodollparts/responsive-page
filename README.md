@@ -28,12 +28,49 @@ En este proyecto desarrollé y desplegué una Landing Page responsiva de una tie
    ```
    Visualiza el proyecto en tu navegador web
    ```
+---
 ## Tecnologías utilizadas
 
 - HTML5
 - CSS3
 - JS
 
-## Autor
+--- 
+## Límites
 
+### Funcionalidad
+
+- El carrito no persiste datos, al recargar la página se pierde el contenido
+- El formulario de contacto no envía emails reales (solo feedback visual)
+- No hay buscador de productos
+
+### Técnicos
+- Proyecto en HTML, CSS y JS puro sin framework ni bundler
+- Sin base de datos, los productos únicamente se muestran
+- Sin sistema de autenticación ni área de usuario
+- Probado en Chrome y Firefox compatibilidad con Safari no verificada
+
+### Diseño
+- Pruebas de accesibilidad, aún no están realizadas
+
+
+## Próximos pasos
+
+### Corto plazo
+- Conectar el formulario de contacto a un servicio real (EmailJS / Formspree)
+- Implementar carrito funcional con `localStorage`
+- Añadir página de detalle de producto
+
+
+### Mediano plazo
+- Migrar a un framework como React
+- Añadir pasarela de pagos (Stripe)
+- Implementar sistema de filtros por precio y valoración
+
+### Largo plazo
+- Agregar registro de usuario e historial
+- Panel de administración para gestionar inventario
+
+---
+## Autor
 Creado por [Antonella Junco Morán](https://github.com/antodollparts) — ¡Si te gusta el proyecto, no dudes en contactarme!
